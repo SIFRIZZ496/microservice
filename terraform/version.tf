@@ -11,8 +11,10 @@ provider "aws" {
   region = var.region
 
   default_tags {
-    owner = "sifrizz"
+  tags = {
+    owner = "SIFRIZZ"
   }
+}
 }
 variable "region" {
   description = "aws region"
