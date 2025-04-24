@@ -7,8 +7,8 @@ on:
        type: choice
        description: Run terraform apply or destroy
        options:
-         -apply
-         -destroy
+         - apply
+         - destroy
 
 jobs:
    terraform: #this is file
