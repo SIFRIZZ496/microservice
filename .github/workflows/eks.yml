@@ -11,8 +11,8 @@ on:
          -destroy
 
 jobs:
-   terraform: #this is yaml file
-     runs-on: ubuntu-latest
+   terraform: #this is file
+    runs-on: ubuntu-latest
      steps:
        - name: Checkout code
          uses: actions/checkout@v4.1.2
