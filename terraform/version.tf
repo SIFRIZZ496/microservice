@@ -6,12 +6,12 @@ terraform {
     }
   }  
 
-  backend "s3" {
+  backend "s3" 
     bucket = "course-microservice-terraform-states"
     encrypt = true
     key = "terraform/microservice/terraform.tfstate"
     region = "us-east-1"
-    }
+    
 }
 
 provider "aws" {
