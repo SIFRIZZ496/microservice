@@ -6,24 +6,24 @@ terraform {
     }
   }  
 
-    backend "s3" {
-      bucket = "course-microservice-terraform-states"
-      encrypt = true
-      key = "terraform/microservice/terraform.tfstate"
-      region = "us-east-1"
+  backend "s3" {
+    bucket = "course-microservice-terraform-states"
+    encrypt = true
+    key = "terraform/microservice/terraform.tfstate"
+    region = "us-east-1"
     }
 }
 
 provider "aws" {
   region = var.region
 
-  default_tags {
+default_tags {
   tags = {
     owner = "SIFRIZZ"
   }
 }
-
 }
+
 variable "region" {
   description = "aws region"
   default     = "us-east-1"
