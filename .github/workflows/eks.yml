@@ -11,7 +11,7 @@ on:
          -destroy
 
 jobs:
-   terraform:
+   terraform: #this is yaml file
      runs-on: ubuntu-latest
      steps:
        - name: Checkout code
