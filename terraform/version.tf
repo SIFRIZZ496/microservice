@@ -17,13 +17,13 @@ terraform {
 provider "aws" {
   region = var.region
 
-  default_tags {
+default_tags {
   tags = {
     owner = "SIFRIZZ"
   }
 }
-
 }
+
 variable "region" {
   description = "aws region"
   default     = "us-east-1"
