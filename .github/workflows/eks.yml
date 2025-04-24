@@ -1,14 +1,14 @@
 name: Microservice EKS
 
 on:
-    workflow_dispatch:
-      inputs:
-        apply_or_destroy:
-          type: choice
-          description: Run terraform apply or destroy
-          options:
-            -apply
-            -destroy
+ workflow_dispatch:
+   inputs:
+     apply_or_destroy:
+       type: choice
+       description: Run terraform apply or destroy
+       options:
+         -apply
+         -destroy
 
 jobs:
     terraform: #this is 
