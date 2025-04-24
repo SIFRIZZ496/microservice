@@ -7,7 +7,7 @@ terraform {
   }  
 
   backend "s3" {
-    bucket = "course-microservice-terraform-states"
+    bucket = "course-microservice-terraform"
     encrypt = true
     key = "terraform/microservice/terraform.tfstate"
     region = "us-east-1"
