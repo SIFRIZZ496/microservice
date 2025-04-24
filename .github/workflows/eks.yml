@@ -33,10 +33,6 @@ jobs:
         working-directory: terraform
         run: terraform init 
 
-      - name: Terraform Init
-        working-directory: terraform
-        run: terraform init
-
       - name: Terraform Plan
         working-directory: terraform
         run: terraform pan
