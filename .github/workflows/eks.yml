@@ -11,7 +11,7 @@ on:
          -destroy
 
 jobs:
-  terraform: #this is 
+   terraform: #this is 
     runs-on: ubuntu-latest
     steps:
      - name: Checkout code
